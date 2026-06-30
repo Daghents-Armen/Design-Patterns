@@ -1,5 +1,8 @@
-class UserService{
-    private Database database;
+package Creational.Singleton;
+import Creational.Singleton.Database;
+
+public class UserService{
+    private final Database database;
 
     public UserService(){
         this.database = Database.getInstance();

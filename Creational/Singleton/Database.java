@@ -1,4 +1,6 @@
-class Database {
+package Creational.Singleton;
+
+public class Database {
     static Database instance;
 
     private Database(){
