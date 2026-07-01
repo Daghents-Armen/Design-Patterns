@@ -2,9 +2,9 @@ package Creational.Factory;
 
 public class Main {
     public static void main(String[] args){
-        PaymentFactory factory = new PaymentFactory();
-        PaymentService service = new PaymentService(factory);
-        service.makePayment(PaymentType.PAYPAL, 10.8);
-        service.makePayment(PaymentType.CREDIT_CARD, 13.2);
+        PaymentService payPalService = new PaymentService(new PayPalFactory());
+        PaymentService creditCardService = new PaymentService(new CreditCardFactory());
+        payPalService.makePayment(10.8);
+        creditCardService.makePayment(13.2);
     }
 }

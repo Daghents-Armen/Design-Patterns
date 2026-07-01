@@ -7,8 +7,8 @@ public class PaymentService {
         this.factory = factory;
     }
 
-    public void makePayment(PaymentType type, double amount){
-        Payment payment = this.factory.create(type);
+    public void makePayment(double amount){
+        Payment payment = this.factory.create();
 
         payment.pay(amount);
     }
