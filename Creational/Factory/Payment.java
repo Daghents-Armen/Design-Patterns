@@ -1,5 +1,5 @@
 package Creational.Factory;
 
-interface Payment {
-    void payment(double amount);
+public interface Payment {
+    void pay(double amount);
 }
